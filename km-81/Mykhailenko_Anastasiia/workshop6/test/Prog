@@ -1,0 +1,8 @@
+import csv
+with open('C:/Users/Nastya/PycharmProjects/n/astronauts.csv', encoding='utf-8', mode='r') as file:
+    reader = csv.reader(file)
+    next(reader, None)
+    for row in reader:
+        print(row[2],row[3],row[4],row[5])
+
+#Вывести Year,Group,Status,Birth.
